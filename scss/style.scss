@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@import"base/mixins";
+@import "layout/header";
+@import "components/burger";
+@import "components/button";
+@import "sections/hero";
+@import "sections/products";
+@import "sections/installment";
+@import "sections/promo-card";
+@import "layout/footer";
+@import "layout/modal";
+@import "utils/media_style";
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+
+@include burger-menu('.menu-toggle', '.burger');
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 18px;
+    background-color:  rgba(49, 50, 47, 1);;
+}
+
+

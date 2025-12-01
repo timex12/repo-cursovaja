@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  background-color: #a7d1ee;
+  font-family: 'Literata';
+  position: relative;
+}
+
+@import "base/mixins";
+@import "sections/container";
+@import "components/stars";
+@import "components/button";
+@import "utils/media_error";
+
+@font-face {
+  font-family: 'Literata';
+  src: url('../font/Literata.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+

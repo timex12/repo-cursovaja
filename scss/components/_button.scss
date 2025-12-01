@@ -1,0 +1,28 @@
+
+@import "../base/mixins";
+.button {
+    @include button();
+    padding: 0px 3px 3px 0px;
+    width: 240px;
+    margin: 47px 35px 7px;
+
+
+    a {
+        text-decoration: none;
+        margin-top: 4px;
+        margin-left: 15px;
+        font-size: 26px;
+        font-weight: 500;
+        color:rgba(255, 255, 246, 1);
+    }
+
+    &::before {
+        @include button_before();
+        margin: 4px 0px 0px 14px;
+    }
+
+    &:hover {
+        background-color: rgb(23, 68, 58);
+    }
+
+}

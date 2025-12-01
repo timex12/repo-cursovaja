@@ -1,0 +1,53 @@
+.hero {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(255, 255, 246, 1);
+    position: relative;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__container {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 100px;
+        font-weight: bold;
+        margin-top: 206px;
+        line-height: 130px;
+        text-align: left;
+        margin-left: 76px;
+
+        &::after {
+            margin-top: 4px;
+            content: " здесь";
+            color: #00a685;
+        }
+    }
+
+    &__h2 {
+        text-align: left;
+        font-size: 22px;
+        margin-top: 132px;
+        margin-left: 79px;
+        font-weight: 80;
+        word-spacing: 1px;
+    }
+
+
+}

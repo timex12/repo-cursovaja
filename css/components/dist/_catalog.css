@@ -1,0 +1,17 @@
+.catalog {
+  padding: 40px 60px 157px;
+}
+.catalog__container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+}
+.catalog__grid {
+  background-color: #1f1f1e;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-right: 35px;
+  margin-left: 35px;
+  padding-bottom: 20px;
+  border: 1px solid #4f504d;
+}

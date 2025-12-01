@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.hero {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fffff6;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.hero__container {
+  position: relative;
+  z-index: 1;
+}
+.hero__title {
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 100px;
+  font-weight: bold;
+  margin-top: 206px;
+  line-height: 130px;
+  text-align: left;
+  margin-left: 76px;
+}
+.hero__title::after {
+  margin-top: 4px;
+  content: " здесь";
+  color: #00a685;
+}
+.hero__h2 {
+  text-align: left;
+  font-size: 22px;
+  margin-top: 132px;
+  margin-left: 79px;
+  font-weight: 80;
+  word-spacing: 1px;
+}

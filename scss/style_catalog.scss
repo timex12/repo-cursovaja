@@ -1,0 +1,38 @@
+@import "base/mixins";
+@import "layout/header2";
+@import "components/burger";
+@import "components/search";
+@import "components/catalog";
+@import "components/product";
+@import "layout/footer";
+@import "utils/media_catalog";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: rgba(49, 50, 47, 1);
+  color:rgba(255, 255, 246, 1);
+
+}
+
+
+.container_h {
+  @include container();
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  @include container();
+}
+
+
+.menu-toggle { 
+  display: none;
+}

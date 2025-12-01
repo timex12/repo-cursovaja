@@ -1,0 +1,76 @@
+.installment {
+    .container_installment {
+        background-image: url('../img/Rectangle 10.svg');
+        margin: 0 auto;
+        padding: 0;
+        max-width: 1440px;
+
+        display: flex;
+        flex-direction: column;
+        color: rgba(255, 255, 246, 1);
+        align-items: center;
+    }
+
+    &_title {
+        font-weight: bold;
+        font-size: 64px;
+        margin-top: 52px;
+        word-spacing: 0px;
+        letter-spacing: 2px;
+    }
+
+    &__cards {
+        background-color: rgba(12, 34, 30, 0.6);
+        border-radius: 30px;
+        backdrop-filter: blur(10px);
+        margin-top: 109px;
+        padding: 17px 110px 52px 112px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 110px;
+    }
+
+    &__subtitle {
+        text-transform: uppercase;
+        font-size: 48px;
+        font-weight: normal;
+        letter-spacing: 2px;
+
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        gap: 18.8px;
+    }
+
+    &__item {
+        background-color: rgba(15, 42, 36, 1);
+        border-radius: 40px;
+        display: flex;
+        padding: 10px 0px 8px 0px;
+        align-items: center;
+        width: 890px;
+    }
+
+    &__number {
+        width: 42px;
+        margin: 8.3px 0px 9px 35.4px;
+    }
+
+    &__text {
+        font-size: 32px;
+        color: rgba(133, 147, 144, 1);
+        margin-left: 100px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+
+    }
+
+    
+
+
+}

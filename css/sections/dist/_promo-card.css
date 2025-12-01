@@ -1,0 +1,88 @@
+@charset "UTF-8";
+.promo-card .promo-container {
+  background-color: #31322f;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+  margin-bottom: 108px;
+}
+.promo-card__title {
+  color: #fffff6;
+  font-size: 72px;
+  padding: 46px 0px 0px 75px;
+  line-height: 86px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-weight: normal;
+}
+.promo-card__title span {
+  display: flex;
+  color: #00a685;
+  font-size: 42px;
+  font-weight: lighter;
+}
+.promo-card__content {
+  background-color: #d9d9d9;
+  border-radius: 40px;
+  display: grid;
+  grid-template-columns: 0.6fr 0.86fr;
+  margin: 25px 10px 0px 112px;
+  padding-bottom: 25px;
+  color: #31322f;
+  width: 1217px;
+}
+.promo-card__image {
+  justify-self: center;
+  margin-top: 38px;
+  margin-right: 2px;
+}
+.promo-card__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style-type: disc;
+  font-size: 40px;
+  width: 480px;
+  font-size: 40px;
+  margin: 50px 0px 0px 77px;
+}
+.promo-card__content button {
+  grid-column: 2;
+}
+.promo-card .promo__button {
+  padding: 0px 0px 8px 2px;
+  width: 240px;
+  margin: 33px 0px 0px 162px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #1d564a;
+  color: #fffff6;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+.promo-card .promo__button a {
+  color: #fffff6;
+  text-decoration: none;
+}
+.promo-card .promo__button a:hover {
+  color: #fffff6;
+}
+.promo-card .promo__button::before {
+  background-image: url("../../img/Стрелка в кнопке.svg");
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 8px 0px 0px 9px;
+}
+.promo-card .promo__button:hover {
+  background-color: #17443a;
+}

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ // border: 1px solid white;
+}
+
+
+
+body {
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #31322f;
+  color: #ffffff;
+}
+
+@import "base/mixins";
+@import "layout/header2";
+@import "components/burger";
+@import "sections/contacts";
+@import "layout/footer";
+@import "utils/media_contacts";
+
+.menu-toggle {
+  display: none;
+}
+
+.container_h {
+
+  @include container();
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container {
+
+  @include container();
+}
+

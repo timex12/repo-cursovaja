@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+@import 'base/mixins';
+@import "layout/header2";
+@import "layout/footer";
+@import "sections/about";
+@import "components/burger";
+@import "utils/media_company";
+
+body {
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: rgba(49, 50, 47, 1);
+    color: #ffffff;
+}
+
+
+.container_h {
+
+    @include container();
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu-toggle {
+    display: none;
+}
+
+

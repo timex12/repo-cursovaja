@@ -1,0 +1,60 @@
+.installment .container_installment {
+  background-image: url("../../img/Rectangle 10.svg");
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  color: #fffff6;
+  align-items: center;
+}
+.installment_title {
+  font-weight: bold;
+  font-size: 64px;
+  margin-top: 52px;
+  word-spacing: 0px;
+  letter-spacing: 2px;
+}
+.installment__cards {
+  background-color: rgba(12, 34, 30, 0.6);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  margin-top: 109px;
+  padding: 17px 110px 52px 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 110px;
+}
+.installment__subtitle {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+.installment__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  gap: 18.8px;
+}
+.installment__item {
+  background-color: #0f2a24;
+  border-radius: 40px;
+  display: flex;
+  padding: 10px 0px 8px 0px;
+  align-items: center;
+  width: 890px;
+}
+.installment__number {
+  width: 42px;
+  margin: 8.3px 0px 9px 35.4px;
+}
+.installment__text {
+  font-size: 32px;
+  color: #859390;
+  margin-left: 100px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}

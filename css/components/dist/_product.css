@@ -1,0 +1,26 @@
+.product {
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 23px 18px 10px 15px;
+}
+.product:hover {
+  transform: scale(1.02);
+}
+.product__image {
+  width: 100%;
+  height: 233px;
+  object-fit: cover;
+  display: block;
+}
+.product__title {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  transform: translateX(-50%);
+  color: #fffff6;
+  font-size: 26px;
+  line-height: 1.2;
+  padding-top: 10px;
+}

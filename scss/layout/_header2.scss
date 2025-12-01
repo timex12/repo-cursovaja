@@ -1,0 +1,62 @@
+
+
+.header {
+  position: relative;
+
+  &__container {
+    padding-top: 48px;
+    color: rgba(255, 255, 246, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 246, 1);
+    padding-bottom: 58px;
+  }
+
+  &__logo {
+    font-size: 24px;
+    margin-left: 82px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-top: 5px;
+
+    &::before {
+      content: url("../img/7.svg");
+      display: inline-block;
+    }
+  }
+
+  &__nav {
+    font-size: 30px;
+    word-spacing: 0px;
+    padding-right: 22px;
+
+    &-list {
+      display: flex;
+      list-style: none;
+      margin-right: 360px;
+      margin-top: 6px;
+      font-size: 24px;
+    }
+
+    &-item {
+      margin: 0px 55px 0px 28px;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: rgba(255, 255, 246, 1);
+      font-weight: bold;
+      font-size: 20px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #00ffcc;
+      }
+    }
+
+  }
+
+}

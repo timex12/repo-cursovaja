@@ -1,0 +1,94 @@
+@import "../base/mixins";
+
+
+.promo-card {
+
+    .promo-container {
+        background-color: rgba(49, 50, 47, 1);
+        margin: 0 auto;
+        padding: 0;
+        max-width: 1440px;
+        margin-bottom: 108px;
+    }
+
+    &__title {
+        color: rgba(255, 255, 246, 1);
+        font-size: 72px;
+        padding: 46px 0px 0px 75px;
+        line-height: 86px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-weight: normal;
+
+        span {
+            display: flex;
+            color: rgba(0, 166, 133, 1);
+            font-size: 42px;
+            font-weight: lighter;
+        }
+    }
+
+    &__content {
+        background-color: rgba(217, 217, 217, 1);
+        border-radius: 40px;
+        display: grid;
+        grid-template-columns: 0.6fr 0.86fr;
+        margin: 25px 10px 0px 112px;
+        padding-bottom: 25px;
+        color: rgba(49, 50, 47, 1);
+        width: 1217px;
+
+    }
+
+    &__image {
+
+        justify-self: center;
+        margin-top: 38px;
+        margin-right: 2px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        list-style-type: disc;
+        font-size: 40px;
+        width: 480px;
+        font-size: 40px;
+        margin: 50px 0px 0px 77px;
+
+    }
+
+    &__content button {
+        grid-column: 2;
+    }
+
+    .promo__button {
+        padding: 0px 0px 8px 2px;
+        width: 240px;
+        margin: 33px 0px 0px 162px;
+        font-size: 24px;
+        font-weight: bold;
+        @include button();
+
+        a {
+            color: rgba(255, 255, 246, 1);
+            text-decoration: none;
+
+            &:hover {
+                color: rgba(255, 255, 246, 1);
+            }
+        }
+
+        &::before {
+            @include button_before();
+            margin: 8px 0px 0px 9px;
+        }
+
+        &:hover {
+            background-color: rgb(23, 68, 58);
+        }
+    }
+
+}

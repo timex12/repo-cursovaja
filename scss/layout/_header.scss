@@ -1,0 +1,74 @@
+
+@import "../base/mixins";
+
+.header {
+    position: relative;
+
+    .container_h {
+        @include container();
+        min-height: 108vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../img/Фото заднего плана.svg");
+    }
+
+    &__container {
+        padding-top: 46px;
+        color: rgba(255, 255, 246, 1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        letter-spacing: 1px;
+    }
+
+
+    &__logo {
+        font-size: 24px;
+        margin-left: 80px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+
+        &::before {
+            content: url("../img/7.svg");
+            display: inline-block;
+        }
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+
+    &__nav {
+        font-size: 30px;
+        word-spacing: 0px;
+        padding-right: 22px;
+
+        &-list {
+            display: flex;
+            list-style: none;
+            margin-right: 369px;
+            margin-top: 6px;
+            font-size: 24px;
+        }
+
+        &-item {
+            margin: 0px 55px 0px 28px;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: rgba(255, 255, 246, 1);
+            font-weight: bold;
+            font-size: 20px;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #00ffcc;
+            }
+        }
+
+    }
+
+}

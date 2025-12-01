@@ -1,0 +1,489 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  background-color: #a7d1ee;
+  font-family: "Literata";
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+  position: relative;
+}
+.container__background {
+  background-color: #a7d1ee;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.container .top-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 143px;
+  padding-top: 138px;
+}
+.container .image {
+  width: 467px;
+  height: 232px;
+}
+.container .big-404 {
+  width: 570px;
+  height: 282px;
+  z-index: 2;
+}
+.container .error-text {
+  margin-left: 130px;
+  margin-top: 30px;
+}
+.container .error-text__title {
+  margin: 0;
+  font-size: 96px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 4px;
+}
+.container .error-text__subtitle {
+  margin: 0;
+  font-size: 52px;
+  color: #ffffff;
+  letter-spacing: 1.1px;
+}
+.container .error__action {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .error__action-text {
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+.container .error__button {
+  background-color: rgb(29, 86, 74);
+  color: rgb(255, 255, 246);
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 14px 68px 14px 66px;
+  font-size: 26px;
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container .error__button::before {
+  background-image: url("../img/Стрелка в кнопке.svg");
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container .error__button:hover {
+  background-color: #4b92c4;
+}
+
+.stars-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.stars-container div {
+  position: absolute;
+  top: -10px;
+  width: 4px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #a0e0ff;
+  opacity: 0.8;
+  animation: fall linear infinite, twinkle linear infinite;
+}
+
+.stars-container div.small {
+  width: 3px;
+  height: 3px;
+}
+
+.stars-container div.medium {
+  width: 5px;
+  height: 5px;
+}
+
+.stars-container div.large {
+  width: 7px;
+  height: 7px;
+}
+
+.stars-container div:nth-child(1) {
+  left: 5%;
+  animation-duration: 25s;
+  animation-delay: 0s;
+}
+
+.stars-container div:nth-child(2) {
+  left: 15%;
+  animation-duration: 20s;
+  animation-delay: 0.5s;
+}
+
+.stars-container div:nth-child(3) {
+  left: 25%;
+  animation-duration: 22s;
+  animation-delay: 1s;
+}
+
+.stars-container div:nth-child(4) {
+  left: 35%;
+  animation-duration: 27s;
+  animation-delay: 1.5s;
+}
+
+.stars-container div:nth-child(5) {
+  left: 45%;
+  animation-duration: 30s;
+  animation-delay: 2s;
+}
+
+.stars-container div:nth-child(6) {
+  left: 55%;
+  animation-duration: 26s;
+  animation-delay: 2.5s;
+}
+
+.stars-container div:nth-child(7) {
+  left: 65%;
+  animation-duration: 28s;
+  animation-delay: 0.5s;
+}
+
+.stars-container div:nth-child(8) {
+  left: 75%;
+  animation-duration: 24s;
+  animation-delay: 1.5s;
+}
+
+.stars-container div:nth-child(9) {
+  left: 85%;
+  animation-duration: 29s;
+  animation-delay: 0.5s;
+}
+
+.stars-container div:nth-child(10) {
+  left: 95%;
+  animation-duration: 23s;
+  animation-delay: 0s;
+}
+
+.stars-container div:nth-child(1) {
+  left: 5%;
+  animation-duration: 25s;
+  animation-delay: 0s;
+}
+
+.stars-container div:nth-child(2) {
+  left: 15%;
+  animation-duration: 20s;
+  animation-delay: 0.5s;
+}
+
+.stars-container div:nth-child(3) {
+  left: 25%;
+  animation-duration: 22s;
+  animation-delay: 1s;
+}
+
+.stars-container div:nth-child(4) {
+  left: 35%;
+  animation-duration: 27s;
+  animation-delay: 1.5s;
+}
+
+.stars-container div:nth-child(5) {
+  left: 45%;
+  animation-duration: 30s;
+  animation-delay: 2s;
+}
+
+.stars-container div:nth-child(6) {
+  left: 55%;
+  animation-duration: 26s;
+  animation-delay: 2.5s;
+}
+
+.stars-container div:nth-child(7) {
+  left: 65%;
+  animation-duration: 28s;
+  animation-delay: 0.5s;
+}
+
+.stars-container div:nth-child(8) {
+  left: 75%;
+  animation-duration: 24s;
+  animation-delay: 1.5s;
+}
+
+.stars-container div:nth-child(9) {
+  left: 85%;
+  animation-duration: 29s;
+  animation-delay: 0.5s;
+}
+
+.stars-container div:nth-child(10) {
+  left: 95%;
+  animation-duration: 23s;
+  animation-delay: 0s;
+}
+
+.stars-container div:nth-child(11) {
+  left: 20%;
+  animation-duration: 25s;
+  animation-delay: 0s;
+}
+
+.stars-container div:nth-child(12) {
+  left: 18%;
+  animation-duration: 20s;
+  animation-delay: 0.5s;
+}
+
+.stars-container div:nth-child(13) {
+  left: 14%;
+  animation-duration: 22s;
+  animation-delay: 1s;
+}
+
+.stars-container div:nth-child(14) {
+  left: 38%;
+  animation-duration: 27s;
+  animation-delay: 1.5s;
+}
+
+.stars-container div:nth-child(15) {
+  left: 40%;
+  animation-duration: 30s;
+  animation-delay: 2s;
+}
+
+.stars-container div:nth-child(16) {
+  left: 58%;
+  animation-duration: 26s;
+  animation-delay: 2.5s;
+}
+
+.stars-container div:nth-child(17) {
+  left: 62%;
+  animation-duration: 28s;
+  animation-delay: 0.5s;
+}
+
+.stars-container div:nth-child(18) {
+  left: 74%;
+  animation-duration: 24s;
+  animation-delay: 1.5s;
+}
+
+.stars-container div:nth-child(19) {
+  left: 86%;
+  animation-duration: 29s;
+  animation-delay: 0.5s;
+}
+
+.stars-container div:nth-child(20) {
+  left: 9%;
+  animation-duration: 23s;
+  animation-delay: 0s;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.button {
+  background-color: rgb(29, 86, 74);
+  color: rgb(255, 255, 246);
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 0px 3px 3px 0px;
+  width: 240px;
+  margin: 47px 35px 7px;
+}
+.button a {
+  text-decoration: none;
+  margin-top: 4px;
+  margin-left: 15px;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgb(255, 255, 246);
+}
+.button::before {
+  background-image: url("../img/Стрелка в кнопке.svg");
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 4px 0px 0px 14px;
+}
+.button:hover {
+  background-color: rgb(23, 68, 58);
+}
+
+@media (max-width: 1200px) {
+  .top-row {
+    gap: 100px;
+  }
+  .image {
+    width: 40%;
+  }
+  .error-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    margin-top: 80px;
+  }
+  .error__action {
+    display: flex;
+    align-items: center;
+  }
+  .big-404 {
+    width: 40%;
+  }
+}
+@media (max-width: 1024px) {
+  .big-404 {
+    width: 50%;
+  }
+  .image {
+    width: 50%;
+  }
+  .top-row {
+    flex-direction: column;
+  }
+  .error-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .error-text h1 {
+    font-size: 72px;
+  }
+  .error-text p {
+    font-size: 40px;
+  }
+  .error-text__action {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .top-row {
+    flex-direction: column;
+    gap: 0px;
+    padding-top: 10px;
+  }
+  .image {
+    width: 300px;
+  }
+  .big-404 {
+    width: 380px;
+  }
+  .error-text {
+    margin: 30px 0 0 0;
+    text-align: center;
+  }
+  .error-text h1 {
+    font-size: 58px;
+  }
+  .error-text p {
+    font-size: 32px;
+    padding: 0;
+  }
+  .error__action {
+    display: flex;
+    align-items: center;
+  }
+  .error__action-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+  }
+  .error__action-text p {
+    font-size: 32px;
+  }
+  .error__button {
+    padding: 12px;
+  }
+  .error__button a {
+    text-decoration: none;
+    color: rgb(255, 255, 246);
+    margin-top: 0px;
+    margin-left: 34px;
+    font-size: 24px;
+  }
+  .error__button::before {
+    width: 12%;
+  }
+}
+@media (max-width: 576px) {
+  .image {
+    width: 240px;
+  }
+  .big-404 {
+    width: 280px;
+  }
+  .error-text h1 {
+    font-size: 42px;
+  }
+  .error-text p {
+    font-size: 24px;
+  }
+  .snowflake1,
+  .snowflake2,
+  .snowflake3 {
+    width: 20%;
+    opacity: 0.3;
+  }
+}
+@font-face {
+  font-family: "Literata";
+  src: url("../font/Literata.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}/*# sourceMappingURL=error.css.map */
