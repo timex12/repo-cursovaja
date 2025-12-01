@@ -9,7 +9,7 @@
   min-height: 108vh;
   display: flex;
   flex-direction: column;
-  background-image: url("../img/Фото заднего плана.svg");
+  background-image: url("../img/Фотозаднегоплана.svg");
 }
 .header__container {
   padding-top: 46px;
